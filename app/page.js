@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect, useState } from "react";
 import { personalData } from "@/utils/data/personal-data";
 import dynamic from "next/dynamic";
 
