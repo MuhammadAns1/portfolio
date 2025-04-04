@@ -7,7 +7,7 @@ export const educations = [
   },
   {
     id: 2,
-    title: "Higher Secondary",
+    title: "Higher Secondary School Certificate",
     duration: "2015 - 2017",
     institution: "Govt College Township",
   },

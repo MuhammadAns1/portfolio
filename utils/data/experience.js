@@ -6,19 +6,13 @@ export const experiences = [
     duration: "(Feb 2024 - Present)"
   },
   {
-    id: 3,
+    id: 2,
     title: "Front End Developer",
     company: "KTECHZ",
     duration: "(Feb 2021 - Dec 2023)"
   },
   {
-    id: 2,
-    title: "Front End Developer",
-    company: "Arkaa Consutants",
-    duration: "(Jan 2021 - Nov 2021)"
-  },
-  {
-    id: 4,
+    id: 3,
     title: "Wordpress Developer",
     company: "WtechSols",
     duration: "(Oct 2020 - Dec 2020)"
