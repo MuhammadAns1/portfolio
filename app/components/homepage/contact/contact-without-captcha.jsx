@@ -27,12 +27,13 @@ function SendEmailForm() {
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-    console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-    console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-    console.log("Public Key:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
-
     try {
-      const response = await emailjs.send(serviceID, templateID, userInput, publicKey);
+      const response = await emailjs.send(
+        serviceID,
+        templateID,
+        userInput,
+        publicKey
+      );
 
       if (response.status === 200) {
         alert("Message sent successfully!");
@@ -59,7 +60,9 @@ function SendEmailForm() {
               type="text"
               placeholder="Enter your name"
               value={userInput.name}
-              onChange={(e) => setUserInput({ ...userInput, name: e.target.value })}
+              onChange={(e) =>
+                setUserInput({ ...userInput, name: e.target.value })
+              }
               required
               className="w-full px-4 py-2 border rounded-md bg-gray-700 text-white focus:ring focus:ring-blue-400 focus:outline-none"
             />
@@ -71,7 +74,9 @@ function SendEmailForm() {
               type="email"
               placeholder="Enter your email"
               value={userInput.email}
-              onChange={(e) => setUserInput({ ...userInput, email: e.target.value })}
+              onChange={(e) =>
+                setUserInput({ ...userInput, email: e.target.value })
+              }
               required
               className="w-full px-4 py-2 border rounded-md bg-gray-700 text-white focus:ring focus:ring-blue-400 focus:outline-none"
             />
@@ -82,7 +87,9 @@ function SendEmailForm() {
             <textarea
               placeholder="Enter your message"
               value={userInput.message}
-              onChange={(e) => setUserInput({ ...userInput, message: e.target.value })}
+              onChange={(e) =>
+                setUserInput({ ...userInput, message: e.target.value })
+              }
               required
               className="w-full px-4 py-2 border rounded-md bg-gray-700 text-white focus:ring focus:ring-blue-400 focus:outline-none"
               rows="4"
