@@ -7,5 +7,5 @@ export const personalData = {
   address: 'Lahore, Pakistan ',
   github: 'https://github.com/MuhammadAns1',
   linkedIn: 'https://www.linkedin.com/in/muhammad-ans-231866240/',
-  resume: "https://drive.google.com/file/d/1GZNf7h3ZGXMEEPgSbhXv4O9J-ysNeuXi/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1kymLRUurcst4wUX4qU61Gs97tI0PLpxx/view?usp=sharing"
 }
